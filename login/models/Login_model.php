@@ -22,7 +22,7 @@ class Login_model extends CI_Model
             //Verifica senha passando a senha do banco de dados e a senha digitada pelo usuário
             if (Bcrypt::check($senha, $pw->senhaUser)) {
                 //pega o dados do usuário
-                $dados = $this->detalhes($email);
+                $dados = $this->pegarUsuario($email);
                 $data = array(
                     'idUser' => $dados->idUser,
                     'nomeUser' => $dados->nomeUser,
@@ -59,7 +59,7 @@ class Login_model extends CI_Model
     }
 
     # VERIFICA SE O USUÁRIO ESTÁ LOGADO
-    function logado()
+    function estaLogado()
     {
         $logged = $this->session->userdata('loggedUser');
         if (!isset($logged) || $logged != true) {
