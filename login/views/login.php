@@ -48,12 +48,13 @@
 
         					<div style="margin-bottom: 25px" class="input-group">
         						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-        						<input id="emailAdmin" type="text" class="form-control" name="emailAdmin" value="" placeholder="E-mail">                                        
+        						<input id="emailAdmin" type="text" class="form-control" name="email" value="admin@teste.com" placeholder="E-mail">
         					</div>
 
         					<div style="margin-bottom: 25px" class="input-group">
         						<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-        						<input id="senhaAdmin" type="password" class="form-control" name="senhaAdmin" placeholder="Senha">
+        						<input id="senhaAdmin" type="password" class="form-control" name="senha" placeholder="Senha" value="3YHV8E">
+								<span>Senha: 3YHV8E</span>
         					</div>
 
 

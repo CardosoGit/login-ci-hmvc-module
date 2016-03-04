@@ -5,22 +5,20 @@
 /*!40101 SET NAMES latin1 */;
 
 #
-# Structure for table "admin"
+# Structure for table "usuarios"
 #
 
-DROP TABLE IF EXISTS `admin`;
+DROP TABLE IF EXISTS `usuarios`;
 CREATE TABLE `admin` (
-  `idAdmin` int(11) NOT NULL AUTO_INCREMENT,
-  `nomeAdmin` varchar(200) NOT NULL DEFAULT '',
-  `emailAdmin` varchar(100) NOT NULL DEFAULT '',
-  `hashAdmin` varchar(255) NOT NULL DEFAULT '',
-  `senhaAdmin` varchar(255) NOT NULL DEFAULT '',
-  `statusAdmin` enum('1','0') NOT NULL DEFAULT '1',
-  PRIMARY KEY (`idAdmin`)
+  `idUser` int(11) NOT NULL AUTO_INCREMENT,
+  `nomeUser` varchar(200) NOT NULL DEFAULT '',
+  `emailUser` varchar(100) NOT NULL DEFAULT '',
+  `senhaUser` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`idUser`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 #
-# Data for table "admin"
+# Data for table "usuarios"
 #
 
-INSERT INTO `admin` VALUES (1,'teste','teste@teste.com','d41d8cd98f00b204e9800998ecf8427e','teste','1');
+INSERT INTO `usuarios` VALUES (1,'Admin','admin@teste.com','$2a$08$MTU3OTcxODc1MDU2Y2EzZ.quWhe/qA2sv.A4ulbNefeC9eUtQkRqO');
